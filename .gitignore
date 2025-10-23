@@ -1336,3 +1336,6 @@ dkms.conf
 
 # debug information files
 *.dwo
+ProgettoOrderHub/obj/Debug/net9.0/ProgettoOrderHub.AssemblyInfo.cs
+ProgettoOrderHub/obj/Debug/net9.0/ProgettoOrderHub.AssemblyInfoInputs.cache
+*.cache

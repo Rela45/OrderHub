@@ -1,14 +1,11 @@
-﻿using System;
+﻿using Domain;
 
 #region REPOSITORY PATTERN
-
-public record Product(Guid Id, string name, decimal Price);
-public record Order(Guid Id, string Customer);
 public interface IProductRepository
 {
     IEnumerable<Product> GetAllProducts();
     void add(Product p);
-    Product? Find(Guid id);
+    Product? Find(string code);
 }
 
 public interface IOrderRepository
@@ -23,7 +20,7 @@ public class InMemoryProductRepository : IProductRepository
     private readonly List<Product> _products = new();
     public void add(Product p) => _products.Add(p);
     public IEnumerable<Product> GetAllProducts() => _products;
-    public Product? Find(Guid id) => _products.FirstOrDefault(p => p.Id == id);
+    public Product? Find(string code) => _products.FirstOrDefault(p => p.Code == code);
 }
 
 public class InMemoryOrderRepository : IOrderRepository

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeb127b9a58fa3addb1095be06dbee1884abdd39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55c3fc8ae283900df7811d7c35f6b6aea2bd4c3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

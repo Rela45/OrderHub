@@ -1,6 +1,4 @@
-﻿
-
-#region DEPENDENCY INJECTION
+﻿#region DEPENDENCY INJECTION
 public class OrderService
 {
     private readonly IOrderRepository _orderRepository;

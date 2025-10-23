@@ -1,64 +1,57 @@
-﻿#region DEPENDENCY INJECTION
+﻿using Domain;
+using Singleton;
+
+#region DEPENDENCY INJECTION
 public class OrderService
 {
     private readonly IOrderRepository _orderRepository;
     private readonly IProductRepository _productRepository;
-    public OrderService(IOrderRepository orderRepository, IProductRepository productRepository)
+    private readonly IConfigurationProvider _configurationProvider;
+    public OrderService(
+        IOrderRepository orderRepository,
+        IProductRepository productRepository,
+        IConfigurationProvider configurationProvider)
     {
         _orderRepository = orderRepository;
         _productRepository = productRepository;
+        _configurationProvider = configurationProvider;
     }
-    public Prder CreateOrder(string customer)
+    public Order CreateOrder(Guid id, decimal price, string customer)
     {
-        var order = new OrderService(customer);
+        var order = new Order(id, price, customer);
         _orderRepository.add(order);
         return order;
     }
-    public void AddItem(Guid orderId, guid productId, int quantity)
+    public void AddItem(Guid id, Product product, int quantity)
     {
-        var order= _orderRepository.Find(orderId);
+        var order = _orderRepository.Find(id);
         if (order == null) return;
-        order.AddItem(new OrderItem(productId, quantity));
+        order.AddItems(product, quantity);
     }
-    public decimal GetSubtotal(Order order)
-    {
-        return order.Items.Sum(item =>
-        {
-           _productRepository.Find(item.ProductId)?.Price * item.Quantity ?? 0;
-        });
-    }
-    public decimal Checkout(Guid orderId, Ipayment Payment)
+
+    public decimal Checkout(Guid orderId)   //IPayment
     {
         var order = _orderRepository.Find(orderId);
         if (order == null) return 0;
-        decimal subtotal = GetSubtotal(order);
-        decimal taxRate = ConfigurationProvider.Instance.Taxrate;
-        decimal tax = subtotal * taxRate;
-        decimal total = subtotal + tax;
-        Payment.pay(order, totali);
-        order.MarkPaid();
-        OnOrderPaid?.Invoke(order.id, total);
+        decimal total = order.Total(_configurationProvider);
+        order.Pay();
         return total;
     }
     public void ShipOrder(Guid orderId)
     {
         var order = _orderRepository.Find(orderId);
         if (order == null )return;
-        if(order.Status== orderStatus.paid)
+        if(order.Status== OrderStatus.Paid)
         {
-            order.MarkShipped();
-            decimal total = GetSubtotal(order) * (1 + ConfigurationProvider.Instance.Taxrate);
-            OnOrderShipped?.Invoke(order.Id, total);
+            order.Ship();
         }
-            order.MarkShipped();
-        OnOrderShipped?.Invoke(order.Id);
     }
+
     public void Cancel (Guid orderId)
     {
         var order= _orderRepository.Find(orderId);
         order?.Cancel();
     }
-    public system.collections.Generic.IEnumerable<OrderService> AllOrders() => _orderRepository.GetAll();
-
+    public IEnumerable<Order> AllOrders() => _orderRepository.GetAll();
 }
 #endregion

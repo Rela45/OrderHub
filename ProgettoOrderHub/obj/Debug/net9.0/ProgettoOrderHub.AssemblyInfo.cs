@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a264cb0ac9f50a9d3a9fd85d181be891a18a659")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgettoOrderHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

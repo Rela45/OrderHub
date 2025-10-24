@@ -1,19 +1,69 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|c:\\_sand\\corso csharp it consulting\\mirko campari\\deposito_carluccio\\giovedi 23 ottobre\\pomeriggio\\progetto_di_gruppo\\progettoorderhub\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|solutionrelative:progettoorderhub\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|c:\\_sand\\corso csharp it consulting\\mirko campari\\deposito_carluccio\\giovedi 23 ottobre\\pomeriggio\\progetto_di_gruppo\\progettoorderhub\\domain\\domain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|solutionrelative:progettoorderhub\\domain\\domain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|c:\\_sand\\corso csharp it consulting\\mirko campari\\deposito_carluccio\\giovedi 23 ottobre\\pomeriggio\\progetto_di_gruppo\\progettoorderhub\\repositorypattern\\repositorypattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE4FC6A-5CDE-E34D-9822-B91849017ACE}|ProgettoOrderHub\\ProgettoOrderHub.csproj|solutionrelative:progettoorderhub\\repositorypattern\\repositorypattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 218,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ProgettoOrderHub\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "ProgettoOrderHub\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:24:43.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositoryPattern.cs",
+              "DocumentMoniker": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\RepositoryPattern\\RepositoryPattern.cs",
+              "RelativeDocumentMoniker": "ProgettoOrderHub\\RepositoryPattern\\RepositoryPattern.cs",
+              "ToolTip": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\RepositoryPattern\\RepositoryPattern.cs",
+              "RelativeToolTip": "ProgettoOrderHub\\RepositoryPattern\\RepositoryPattern.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:23:09.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Domain.cs",
+              "DocumentMoniker": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\Domain\\Domain.cs",
+              "RelativeDocumentMoniker": "ProgettoOrderHub\\Domain\\Domain.cs",
+              "ToolTip": "C:\\_SAND\\Corso Csharp IT Consulting\\Mirko Campari\\Deposito_Carluccio\\Giovedi 23 ottobre\\Pomeriggio\\Progetto_Di_Gruppo\\ProgettoOrderHub\\Domain\\Domain.cs",
+              "RelativeToolTip": "ProgettoOrderHub\\Domain\\Domain.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwCoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:28:11.824Z"
             }
           ]
         }
